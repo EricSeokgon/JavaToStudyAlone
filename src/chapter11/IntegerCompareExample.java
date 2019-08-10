@@ -9,5 +9,6 @@ public class IntegerCompareExample {
 
         System.out.println(obj1 == obj2);
         System.out.println((int)obj3 == obj4);
+
     }
 }
