@@ -9,7 +9,7 @@ public class IntegerCompareExample {
 
         System.out.println(obj1 == obj2);
         System.out.println((int)obj3 == obj4);
-
-
+        System.out.println(obj1.equals(obj2));
+        System.out.println(obj3.equals(obj4));
     }
 }
