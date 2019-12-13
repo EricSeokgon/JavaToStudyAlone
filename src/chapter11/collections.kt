@@ -5,10 +5,14 @@ fun main() {
     for (item in items) {
         println(item)
     }
-
-    val items2 = listOf("apple", "banana", "kiwi")
     when {
-        "orange" in items2 -> println("juicy")
-        "apple" in items2 -> println("apple is fine too")
+        "orange" in items -> println("juicy")
+        "apple" in items -> println("apple is fine too")
     }
+
+    items.filter { it.startsWith("a") }
+            .sortedBy { it }
+            .map { it.toUpperCase() }
+            .forEach { println(it) }
+
 }
